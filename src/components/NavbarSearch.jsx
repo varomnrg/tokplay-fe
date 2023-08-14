@@ -33,7 +33,7 @@ function NavbarSearch({ users, onSearchSubmit }) {
             <Box bg={"rgb(36, 36, 36)"} px={4}>
                 <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
                     <LinkBox>
-                        <LinkOverlay href="/">
+                        <LinkOverlay href="/play/">
                             <HStack spacing={0.5} alignItems={"center"} justifyContent={"center"}>
                                 <Flex alignItems={"center"} pt={"2px"} h={"40px"}>
                                     <Image src="../src/assets/images/logo.png" height={"25px"} alt="Tokopedia" />
@@ -83,12 +83,12 @@ function NavbarSearch({ users, onSearchSubmit }) {
                                     <br />
                                     <MenuDivider />
                                     <MenuItem>
-                                        <Link href="/login">
+                                        <Link href="/play/login">
                                             <Center>Login</Center>
                                         </Link>
                                     </MenuItem>
                                     <MenuItem>
-                                        <Link href="/register">
+                                        <Link href="/play/register">
                                             <Center>Register</Center>
                                         </Link>
                                     </MenuItem>

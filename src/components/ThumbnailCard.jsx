@@ -21,7 +21,7 @@ function ThumbnailCard({ videoId, title, channel, tags, thumbnailUrl }) {
                 transform: "scale(1.04)",
             }}
             onClick={(e) => {
-                window.location.href = `/video/${videoId}`;
+                window.location.href = `/play/video/${videoId}`;
             }}
         >
             <Image borderWidth="1px" borderRadius="lg" src={thumbnailUrl} alt={title} objectFit="cover" maxW="100%" minW="100%" maxHeight="100%" minHeight="100%"></Image>

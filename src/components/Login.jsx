@@ -24,7 +24,7 @@ function Form() {
                     setRegistrationError(error);
                 } else {
                     actions.resetForm();
-                    history.push("/");
+                    history.push("/play/");
                 }
 
                 actions.setSubmitting(false);
@@ -79,7 +79,7 @@ function Form() {
                         <Stack pt={6}>
                             <Text align={"center"}>
                                 Create an account?&nbsp;
-                                <Link color={"blue.400"} href={"/register"}>
+                                <Link color={"blue.400"} href={"/play/register"}>
                                     Register
                                 </Link>
                             </Text>

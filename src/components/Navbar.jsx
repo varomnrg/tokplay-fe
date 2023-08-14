@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, HStack, Image, Text, Avatar, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Center, LinkBox, LinkOverlay } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Text, Avatar, Button, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Center, LinkBox, LinkOverlay, Link } from "@chakra-ui/react";
 import { useAuthentication } from "../hooks";
 
 function Navbar({ users }) {
@@ -21,7 +21,7 @@ function Navbar({ users }) {
             <Box bg={"rgb(36, 36, 36)"} px={4}>
                 <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
                     <LinkBox>
-                        <LinkOverlay href="/">
+                        <LinkOverlay href="/play/">
                             <HStack spacing={0.5} alignItems={"center"} justifyContent={"center"}>
                                 <Flex alignItems={"center"} pt={"2px"} h={"40px"}>
                                     <Image src="../src/assets/images/logo.png" height={"25px"} alt="Tokopedia" />
@@ -65,9 +65,15 @@ function Navbar({ users }) {
                                     <br />
                                     <MenuDivider />
                                     <MenuItem>
-                                        <Center>Login</Center>
+                                        <Link href="/play/login">
+                                            <Center>Login</Center>
+                                        </Link>
                                     </MenuItem>
-                                    <MenuItem>Register</MenuItem>
+                                    <MenuItem>
+                                        <Link href="/play/register">
+                                            <Center>Register</Center>
+                                        </Link>
+                                    </MenuItem>
                                 </MenuList>
                             )}
                         </Menu>

@@ -117,7 +117,7 @@ function Form() {
                         <Stack pt={6}>
                             <Text align={"center"}>
                                 Already a user?&nbsp;
-                                <Link color={"blue.400"} href={"/login"}>
+                                <Link color={"blue.400"} href={"/play/login"}>
                                     Login
                                 </Link>
                             </Text>
