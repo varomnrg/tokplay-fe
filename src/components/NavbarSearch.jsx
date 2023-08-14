@@ -36,7 +36,7 @@ function NavbarSearch({ users, onSearchSubmit }) {
                         <LinkOverlay href="/play/">
                             <HStack spacing={0.5} alignItems={"center"} justifyContent={"center"}>
                                 <Flex alignItems={"center"} pt={"2px"} h={"40px"}>
-                                    <Image src="../src/assets/images/logo.png" height={"25px"} alt="Tokopedia" />
+                                    <Image src="/logo.png" height={"25px"} alt="Tokopedia" />
                                 </Flex>
                                 <Flex alignItems={"start"} h={"40px"}>
                                     <Text fontSize={"2xl"} color={"white"}>
